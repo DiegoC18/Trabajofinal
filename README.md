@@ -8,6 +8,16 @@
 ### pilar en que nos basamos:
 * pilar de Responsabilidad Social
 
+### Input
+* Cantidad de personas por familia(niños , adultos y personas de la tercera edad)
+* Ingreso mensual(Si es que tiene)
+* Localidad
+* DNI
+* ¿ENFERMEDAD?}
+* Datos Personales de cada integrante(nombre, apellido, edad, sexo, estado civil, codigo postal, tipo de sangre)
+
+
+
 ## Integrantes
 
 * Johan Timaná
