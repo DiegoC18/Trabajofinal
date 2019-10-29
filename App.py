@@ -1,17 +1,25 @@
 n_personas = int(input("ingrese el numero de personas en el domicilio: "))
-lista_personas = []
-lista_sub = []
+lista_nombres = []
+lista_edades = []
+lista_generos = []
 i = 0
 
 
 while (i<n_personas):
     nombre = input("ingrese el nombre ede la persona: ")
-    edad = input("ingrese edad de la persona")
-    genero = input("ingrese si es hombre o mujer:")
+    edad = input("ingrese edad de la persona: ")
+    genero = input("ingrese si es hombre o mujer :")
+    lista_nombres.append(nombre)
+    lista_edades.append(edad)
+    lista_generos.append(genero)
+    
 
     i += 1
 
 
+print(lista_nombres)
+print(lista_edades)
+print(lista_generos)
 
     
     
