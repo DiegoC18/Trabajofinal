@@ -8,11 +8,11 @@ i = 0
 
 
 ##PROCESO
-while (i=<n_personas.length()):
+while (i<=n_personas.length()):
     nombre = input("ingrese el nombre ede la persona: ")
     edad = input("ingrese edad de la persona: ")
     genero = input("ingrese si es hombre o mujer :")
-    lista_nombres.append(nombre)
+    lista_nombres.append(nombre.title())
     lista_edades.append(edad)
     lista_generos.append(genero)
     
