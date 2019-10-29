@@ -39,6 +39,3 @@ while (i<n_personas):
 print(lista_nombres)
 print(lista_edades)
 print(lista_generos)
-
-    
-    
