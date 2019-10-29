@@ -1,6 +1,8 @@
 import os,sys
 os.system("cls")
 
+print("---------- Bienvenido al sistema de registro de familias ----------")
+
 ## INPUT
 n_personas = int(input("Ingrese el número de personas en el domicilio: "))
 n_enfermos = 0
@@ -12,7 +14,7 @@ i = 0
 
 
 
-##PROCESO
+##INPUT
 while (i<n_personas):
     nombre = input("ingrese el nombre de la persona: ")
     edad = int(input("ingrese edad de la persona: "))
