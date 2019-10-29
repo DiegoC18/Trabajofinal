@@ -16,7 +16,6 @@ i = 0
 
 ##INPUT
 while (i<n_personas):
-<<<<<<< HEAD
     nombre = input("ingrese el nombre de la persona: ")
     edad = int(input("ingrese edad de la persona: "))
     while(True):
@@ -34,7 +33,6 @@ while (i<n_personas):
 
     genero = input("ingrese si es hombre o mujer :")
 
-=======
     nombre = input("Ingrese el nombre de la persona: ")
     edad = input("Ingrese edad de la persona: ")
     genero = input("Ingrese si es hombre o mujer :")
@@ -47,7 +45,6 @@ while (i<n_personas):
         print("que bueno que estes sano(a) "+ nombre) 
     
     
->>>>>>> 9187f0f2a13d77ddb5711667bfcfc726e43d5e27
     lista_nombres.append(nombre.title())
     lista_edades.append(edad)
     lista_edades2.append(edad2)
