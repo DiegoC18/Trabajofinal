@@ -75,6 +75,7 @@ for i in range (n_personas):
     print("Persona #",i+1)
     print( "Nombre: ", lista_nombres[i] )
     print( "Edad: ", lista_edades[i] )
+    print(lista_edades2[i] )
     print( "Género: ", lista_generos[i] )
     print("---------------------")
     
