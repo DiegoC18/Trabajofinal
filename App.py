@@ -1,3 +1,6 @@
+import os,sys
+os.system("cls")
+
 n_personas = int(input("ingrese el numero de personas en el domicilio: "))
 lista_personas = []
 lista_sub = []
@@ -10,8 +13,6 @@ while (i<n_personas):
     genero = input("ingrese si es hombre o mujer:")
 
     i += 1
-
-
 
     
     
