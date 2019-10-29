@@ -8,8 +8,8 @@ i = 0
 
 
 ##PROCESO
-while (i<=len(n_personas)):
-    nombre = input("ingrese el nombre ede la persona: ")
+while (i<n_personas):
+    nombre = input("ingrese el nombre de la persona: ")
     edad = input("ingrese edad de la persona: ")
     genero = input("ingrese si es hombre o mujer :")
     lista_nombres.append(nombre.title())
