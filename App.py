@@ -14,10 +14,20 @@ i = 0
 while (i<n_personas):
     nombre = input("Ingrese el nombre de la persona: ")
     edad = input("Ingrese edad de la persona: ")
-    genero = input("Ingrese si es hombre o mujer :")
+    def genero():
+        hask = input("Es la persona hombre?(sí o no):")
+    if genero.title() == "Si" or "Sí":
+        return True
+        genero = "Hombre"
+    if genero.title() == "No":
+        return False
+        genero = "Mujer"
+   
     lista_nombres.append(nombre.title())
     lista_edades.append(edad)
     lista_generos.append(genero)
+
+
     
 
     i += 1
