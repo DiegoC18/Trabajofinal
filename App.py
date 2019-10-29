@@ -33,6 +33,18 @@ while (i<n_personas):
 
     genero = input("ingrese si es hombre o mujer :")
 
+    nombre = input("Ingrese el nombre de la persona: ")
+    edad = input("Ingrese edad de la persona: ")
+    genero = input("Ingrese si es hombre o mujer :")
+    enfermo = input("esta enfermo? (si/no)")
+
+    if (enfermo == "si"):
+        n_enfermos += 1 
+
+    else :
+        print("que bueno que estes sano(a) "+ nombre) 
+    
+    
     lista_nombres.append(nombre.title())
     lista_edades.append(edad)
     lista_edades2.append(edad2)
