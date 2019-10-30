@@ -23,7 +23,7 @@ while (i<n_personas):
 
         gen_pregunta = input("Es la persona hombre? (sí o no): ")
 
-        if gen_pregunta.title() == "si":
+        if gen_pregunta.lower() == "si":
             genero = "Hombre"
             lista_generos.append(genero)
             break
