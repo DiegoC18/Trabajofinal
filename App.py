@@ -25,7 +25,7 @@ while (i<n_personas):
     if genero.title() == "No":
         genero = "Mujer"
    
-    enfermo = input("esta enfermo? (si/no)")
+    enfermo = input("¿esta enfermo? (si/no)")
 
     if (enfermo == "si"):
         n_enfermos += 1
