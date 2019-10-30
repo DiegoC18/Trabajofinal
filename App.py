@@ -18,24 +18,26 @@ i = 0
 while (i<n_personas):
 
     nombre = input("ingrese el nombre de la persona: ")
+    lista_nombres.append(nombre)
     edad = int(input("ingrese edad de la persona: "))
+    lista_edades.append(edad)
     genero = input("Es la persona hombre?(sí o no):")
     if genero.title() == "Si" or "Sí":
         genero = "Hombre"
-    if genero.title() == "No":
+    elif genero.title() == "No":
         genero = "Mujer"
-   
+    lista_generos.append(genero)
     enfermo = input("¿esta enfermo? (si/no)")
 
     if (enfermo == "si"):
         n_enfermos += 1
         enf_bool = "Si" 
 
+
     else :
         print("que bueno que estes sano(a) "+ nombre) 
         enf_bool ="No"
     
-  
     i += 1
 
  ##SALIDA
