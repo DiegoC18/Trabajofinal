@@ -101,5 +101,5 @@ for i in range (n_personas):
     print("---------------------")
  
 print("Número total de enfermos: ", n_enfermos)
-    
++    
     
