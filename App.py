@@ -69,7 +69,7 @@ for i in range (n_personas):
     print( "Enfermo: ", lista_enfermos[i] )
     print( "Género: ", lista_generos[i] )
     print("---------------------")
-    print(lista_generos)
+ 
 print("Número total de enfermos: ", n_enfermos)
     
     
