@@ -10,6 +10,7 @@ lista_nombres = []
 lista_edades = []
 lista_generos = []
 lista_edades2=[]
+medicamentos={"Pecho":"aspirina","Cabeza":"ibuprofeno","Musculos":"Relajante","Estomago":"Desintoxicante","Garganta":"Desinflamatorio","Asma":"Salbutamol"}
 i = 0
 
 
@@ -31,7 +32,11 @@ while (i<n_personas):
 
     if (enfermo == "si"):
         n_enfermos += 1
-        enf_bool = "Si" 
+        enf_bool = "Si"
+        enfermedad=str(input("Que le molesta?"))
+        for k in range(medicamentos):
+            if medicamentos[enfermedad]=True:
+                print(medicamentos) 
 
 
     else :
