@@ -10,12 +10,9 @@ genero = ""
 lista_nombres = []
 lista_edades = []
 lista_generos = []
-<<<<<<< HEAD
 lista_edades2=[]
-medicamentos={"Pecho":"aspirina","Cabeza":"ibuprofeno","Musculos":"Relajante","Estomago":"Desintoxicante","Garganta":"Desinflamatorio","Asma":"Salbutamol"}
-=======
 lista_enfermos=[]
->>>>>>> 7104527922c04d9d3e66c005d42e7a02016c48d4
+medicamentos={"Pecho":"aspirina","Cabeza":"Ibuprofeno","Músculos":"Relajante","Estómago":"Desintoxicante","Garganta":"Desinflamatorio","Asma":"Salbutamol"}
 i = 0
 
 while (i<n_personas):
@@ -26,7 +23,7 @@ while (i<n_personas):
 
     while True:
 
-        gen_pregunta = input("Es la persona hombre? (sí o no): ")
+        gen_pregunta = input("Es la persona hombre? (Sí/No): ")
 
         if gen_pregunta.lower() == "si":
             genero = "Hombre"
@@ -56,38 +53,13 @@ while (i<n_personas):
             break
 
         else :
-            print("Ingrese una respuesta válida (si/no).")
+            print("Ingrese una respuesta válida (Sí/No).")
                 
   
     i += 1
 
     lista_nombres.append(nombre)
     lista_edades.append(edad)
-<<<<<<< HEAD
-    genero = input("Es la persona hombre?(sí o no):")
-    if genero.title() == "Si" or "Sí":
-        genero = "Hombre"
-    elif genero.title() == "No":
-        genero = "Mujer"
-    lista_generos.append(genero)
-    enfermo = input("¿esta enfermo? (si/no)")
-
-    if (enfermo == "si"):
-        n_enfermos += 1
-        enf_bool = "Si"
-        enfermedad=str(input("Que le molesta?"))
-        for k in range(medicamentos):
-            if medicamentos[enfermedad]=True:
-                print(medicamentos) 
-
-
-    else :
-        print("que bueno que estes sano(a) "+ nombre) 
-        enf_bool ="No"
-    
-    i += 1
-=======
->>>>>>> 7104527922c04d9d3e66c005d42e7a02016c48d4
 
 ##SALIDA
 
@@ -101,5 +73,5 @@ for i in range (n_personas):
     print("---------------------")
  
 print("Número total de enfermos: ", n_enfermos)
-+    
+
     
