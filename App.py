@@ -10,33 +10,53 @@ genero = ""
 lista_nombres = []
 lista_edades = []
 lista_generos = []
-lista_edades2=[]
 lista_enfermos=[]
 medicamentos={"Pecho":"aspirina","Cabeza":"Ibuprofeno","Músculos":"Relajante","Estómago":"Desintoxicante","Garganta":"Desinflamatorio","Asma":"Salbutamol"}
 i = 0
 
 while (i<n_personas):
 
+    print(" ")
+    print("PERSONA #",i+1)
+
     nombre = input("Ingrese el nombre de la persona: ")
 
     edad = int(input("Ingrese edad de la persona: "))  
 
+    infantes = 0
+    adolescentes = 0
+    adultos = 0
+    adultos_mayores = 0
+    
+    if 0<=edad<13:
+        infantes=infantes+1
+        etapa = "infante"
+    elif 13<=edad<20:
+        adolescentes=adolescentes+1
+        etapa = "adolescente"
+    elif 20<=edad<60:
+        adultos=adultos+1
+        etapa = "adulto"
+    else:
+        adultos_mayores=adultos_mayores+1
+        etapa = "adulto mayor"
+
     while True:
 
-        gen_pregunta = input("Es la persona hombre? (Sí/No): ")
+        gen_pregunta = input("sexo? (H/M): ")
 
-        if gen_pregunta.lower() == "si":
+        if gen_pregunta.lower() == "h":
             genero = "Hombre"
             lista_generos.append(genero)
             break
 
-        if gen_pregunta.lower() == "no":
+        if gen_pregunta.lower() == "m":
             genero = "Mujer"
             lista_generos.append(genero)
             break
 
         else :
-            print("Ingrese una respuesta válida (Sí/No).")
+            print("Ingrese una respuesta válida (H/M).")
 
     while True:
 
@@ -73,6 +93,7 @@ for i in range (n_personas):
     print("Persona #",i+1)
     print( "Nombre: ", lista_nombres[i] )
     print( "Edad: ", lista_edades[i] )
+    print("Etapa: ", etapa )
     print( "Enfermo: ", lista_enfermos[i] )
     print(respuesta_medicamento)
     print( "Género: ", lista_generos[i] )
