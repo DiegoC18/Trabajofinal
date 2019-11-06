@@ -8,6 +8,7 @@ n_personas = int(input("Ingrese el número de personas en el domicilio: "))
 n_enfermos = 0
 genero = ""
 calorias=""
+respuesta_medicamentos=""
 lista_nombres = []
 lista_edades = []
 lista_generos = []
@@ -65,20 +66,20 @@ while (i<n_personas):
 
         if (enfermo.lower() == "si"):
             n_enfermos += 1
-            lista_enfermos.append("Sí")
+            lista_enfermos.append(enfermo.title())
             enfermedad=str(input("Que le duele?"))
             
             for k in range(0, len(medicamentos)):
                 if(enfermedad.title() in medicamentos):
-                    respuesta_medicamento=("tomar", medicamentos[enfermedad.title()])
-                break
-                else :
-                    respuesta_medicamento=("ir al medico")
-                break
-
-        if (enfermo.lower() == "no"):
+                    respuesta_medicamento=("Usted deberia tomar", medicamentos[enfermedad.title()])
+                    
+                else:
+                    respuesta_medicamento=("Usted deberia ir al medico")
+                    
+            break
+        elif (enfermo.lower() == "no"):
             print("Qué bueno que estés sano(a) "+ nombre) 
-            lista_enfermos.append("No")
+            lista_enfermos.append(enfermo.title())
 
             break
 
@@ -98,7 +99,7 @@ while (i<n_personas):
         calorias="Usted deberia consumir 2250 kilocalorias"
     elif etapa=="adulto mayor":
         calorias="Usted deberia consumir 2100 kilocalorias"
-i += 1
+    i=i+1
 
 lista_nombres.append(nombre)
 lista_edades.append(edad)
@@ -113,7 +114,6 @@ for i in range (n_personas):
     print("Etapa: ", etapa )
     print(calorias)
     print( "Enfermo: ", lista_enfermos[i] )
-    print("Usted deberia ",end="")
     print(respuesta_medicamento)
     print( "Género: ", lista_generos[i] )
     print("---------------------")
