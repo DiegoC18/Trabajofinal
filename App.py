@@ -7,6 +7,7 @@ print("---------- Bienvenido al sistema de registro de familias ----------")
 n_personas = int(input("Ingrese el número de personas en el domicilio: "))
 n_enfermos = 0
 genero = ""
+calorias=""
 lista_nombres = []
 lista_edades = []
 lista_generos = []
