@@ -7,6 +7,7 @@ print("---------- Bienvenido al sistema de registro de familias ----------")
 n_personas = int(input("Ingrese el número de personas en el domicilio: "))
 n_enfermos = 0
 genero = ""
+calorias=""
 lista_nombres = []
 lista_edades = []
 lista_generos = []
@@ -66,12 +67,12 @@ while (i<n_personas):
             n_enfermos += 1
             lista_enfermos.append("Sí")
             enfermedad=str(input("Que le duele?"))
-            enfermedad
+            
             for k in range(0, len(medicamentos)):
                 if(enfermedad.title() in medicamentos):
                     respuesta_medicamento=("tomar", medicamentos[enfermedad.title()])
                 break
-                else:
+                else :
                     respuesta_medicamento=("ir al medico")
                 break
 
@@ -84,15 +85,15 @@ while (i<n_personas):
         else :
             print("Ingrese una respuesta válida (Sí/No).")
                 
-    if etapa= "infante":
+    if etapa== "infante":
         calorias="Usted deberia consumir 1400 kilocalorias"
-    elif etapa="adolescente":
+    elif etapa=="adolescente":
         calorias="Usted deberia consumir 1600 kilocalorias"
-    elif etapa="adulto" and genero="Mujer":
+    elif etapa=="adulto" and genero=="Mujer":
         calorias="Usted deberia consumir 2000 kilocalorias"
-    elif etapa="adulto" and genero="Hombre":
-        calorias="Usted deberia consumir 2250 kilocalorias""
-    elif etapa="adulto mayor":
+    elif etapa=="adulto" and genero=="Hombre":
+        calorias="Usted deberia consumir 2250 kilocalorias"
+    elif etapa=="adulto mayor":
         calorias="Usted deberia consumir 2100 kilocalorias"
 i += 1
 
