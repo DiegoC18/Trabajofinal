@@ -83,7 +83,16 @@ while (i<n_personas):
         else :
             print("Ingrese una respuesta válida (Sí/No).")
                 
-  
+if etapa= "infante":
+    calorias="Usted deberia consumir 1400 kilocalorias"
+elif etapa="adolescente":
+    calorias="Usted deberia consumir 1600 kilocalorias"
+elif etapa="adulto" and genero="Mujer":
+    calorias="Usted deberia consumir 2000 kilocalorias"
+elif etapa="adulto" and genero="Hombre":
+    calorias="Usted deberia consumir 2250 kilocalorias""
+elif etapa="adulto mayor":
+    calorias="Usted deberia consumir 2100 kilocalorias"
     i += 1
 
     lista_nombres.append(nombre)
@@ -97,6 +106,7 @@ for i in range (n_personas):
     print( "Nombre: ", lista_nombres[i] )
     print( "Edad: ", lista_edades[i] )
     print("Etapa: ", etapa )
+    print(calorias)
     print( "Enfermo: ", lista_enfermos[i] )
     print("Usted deberia ",end="")
     print(respuesta_medicamento)
