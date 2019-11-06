@@ -13,7 +13,7 @@ lista_nombres = []
 lista_edades = []
 lista_generos = []
 lista_enfermos=[]
-medicamentos={"Pecho":"aspirina","Cabeza":"Ibuprofeno","Músculos":"Relajante","Estómago":"Desintoxicante","Garganta":"Desinflamatorio","Asma":"Salbutamol"}
+medicamentos={"Pecho":"aspirina","Cabeza":"Ibuprofeno","Músculos":"Relajante","Estómago":"Desintoxicante","Garganta":"Desinflamatorio","Asma":'Salbutamol'}
 i = 0
 
 while (i<n_personas):
@@ -70,7 +70,7 @@ while (i<n_personas):
             enfermedad=str(input("Que le duele?"))
             for k in range(0, len(medicamentos)):
                 if(enfermedad.title() in medicamentos):
-                    respuesta_medicamento=("Usted deberia tomar", medicamentos[enfermedad.title()])
+                    respuesta_medicamento=medicamentos[enfermedad.title()]
                     
                 else:
                     respuesta_medicamento=("Usted deberia ir al medico")
@@ -113,7 +113,10 @@ for i in range (n_personas):
     print("Etapa: ", etapa )
     print(calorias)
     print( "Enfermo: ", lista_enfermos[i] )
-    print(respuesta_medicamento)
+    if (enfermo.lower() == "si"): 
+        print("Usted deberia tomar", respuesta_medicamento)
+    if (enfermo.lower() == "no"):
+        print("La persona está sana")   
     print( "Género: ", lista_generos[i] )
     print("---------------------")
  
