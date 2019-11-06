@@ -15,7 +15,7 @@ medicamentos={"Pecho":"aspirina","Cabeza":"Ibuprofeno","Músculos":"Relajante","
 i = 0
 
 while (i<n_personas):
-
+ ##registro de persona
     print(" ")
     print("PERSONA #",i+1)
 
@@ -42,7 +42,7 @@ while (i<n_personas):
         etapa = "adulto mayor"
 
     while True:
-
+        ## genero de la persona
         gen_pregunta = input("sexo? (H/M): ")
 
         if gen_pregunta.lower() == "h":
@@ -59,7 +59,7 @@ while (i<n_personas):
             print("Ingrese una respuesta válida (H/M).")
 
     while True:
-
+  ## la persona esta enferma??
         enfermo = input("¿Está la persona enferma? (Sí/No): ")
 
         if (enfermo.lower() == "si"):
@@ -82,6 +82,9 @@ while (i<n_personas):
 
         else :
             print("Ingrese una respuesta válida (Sí/No).")
+
+      ## numero de kilocalorias persona
+            
                 
   
     i += 1
