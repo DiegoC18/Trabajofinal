@@ -69,10 +69,11 @@ while (i<n_personas):
             enfermedad
             for k in range(0, len(medicamentos)):
                 if(enfermedad.title() in medicamentos):
-                    respuesta_medicamento=(medicamentos[enfermedad.title()])
+                    respuesta_medicamento=("tomar", medicamentos[enfermedad.title()])
+                break
                 else:
                     respuesta_medicamento=("ir al medico")
-            break
+                break
 
         if (enfermo.lower() == "no"):
             print("Qué bueno que estés sano(a) "+ nombre) 
@@ -83,20 +84,20 @@ while (i<n_personas):
         else :
             print("Ingrese una respuesta válida (Sí/No).")
                 
-if etapa= "infante":
-    calorias="Usted deberia consumir 1400 kilocalorias"
-elif etapa="adolescente":
-    calorias="Usted deberia consumir 1600 kilocalorias"
-elif etapa="adulto" and genero="Mujer":
-    calorias="Usted deberia consumir 2000 kilocalorias"
-elif etapa="adulto" and genero="Hombre":
-    calorias="Usted deberia consumir 2250 kilocalorias""
-elif etapa="adulto mayor":
-    calorias="Usted deberia consumir 2100 kilocalorias"
-    i += 1
+    if etapa= "infante":
+        calorias="Usted deberia consumir 1400 kilocalorias"
+    elif etapa="adolescente":
+        calorias="Usted deberia consumir 1600 kilocalorias"
+    elif etapa="adulto" and genero="Mujer":
+        calorias="Usted deberia consumir 2000 kilocalorias"
+    elif etapa="adulto" and genero="Hombre":
+        calorias="Usted deberia consumir 2250 kilocalorias""
+    elif etapa="adulto mayor":
+        calorias="Usted deberia consumir 2100 kilocalorias"
+i += 1
 
-    lista_nombres.append(nombre)
-    lista_edades.append(edad)
+lista_nombres.append(nombre)
+lista_edades.append(edad)
 
 ##SALIDA
 
