@@ -1,6 +1,7 @@
 import os,sys
 os.system("cls")
 
+print("Mimp")
 print("---------- Bienvenido al sistema de registro de familias ----------")
 
 ## INPUT
@@ -19,6 +20,7 @@ i = 0
 a=0
 b=0
 c=0
+e=0
 
 while (i<n_personas):
  ##registro de persona
@@ -71,13 +73,17 @@ while (i<n_personas):
         if (enfermo.lower() == "si"):
             n_enfermos += 1
             lista_enfermos.append(enfermo.title())
-            enfermedad=str(input("Que le duele?"))
-            for k in range(0, len(medicamentos)):
+            enfermedad=str(input("¿Que le duele? "))
+            for k in range(0, 1):
                 if(enfermedad.title() in medicamentos):
-                    respuesta_medicamento=medicamentos[enfermedad.title()]
-                    lista_medicamentos.append(respuesta_medicamento)
+                    e=1
                 else:
-                    respuesta_medicamento=("Usted deberia ir al medico")
+                    e=0
+            if(e==1):
+                respuesta_medicamento=medicamentos[enfermedad.title()]
+                lista_medicamentos.append(respuesta_medicamento)
+            else:
+                respuesta_medicamento=("Usted deberia ir al medico")
                     
             break
         elif (enfermo.lower() == "no"):
@@ -125,15 +131,12 @@ for i in range (0,n_personas):
     print("Etapa: ", etapa )
     print(calorias)
     print( "Enfermo: ", lista_enfermos[i] )
-    if (lista_enfermos[i] == "si"): 
+    if (lista_enfermos[i] == "Si"): 
         print("Usted deberia tomar", respuesta_medicamento)
-    if (lista_enfermos[i] == "no"):
+    if (lista_enfermos[i] == "No"):
         print("La persona está sana")   
     print( "Género: ", lista_generos[i] )
     print("---------------------")
  
 print("Se le va a ayudar con un monto de ",a*200+b*400+c*200,"soles" )
 print("Número total de enfermos: ", n_enfermos)
-print(lista_enfermos)
-print(lista_medicamentos)
-
