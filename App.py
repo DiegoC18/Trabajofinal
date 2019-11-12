@@ -8,13 +8,14 @@ n_personas = int(input("Ingrese el número de personas en el domicilio: "))
 n_enfermos = 0
 genero = ""
 calorias=""
-respuesta_medicamentos=""
+respuesta_medicamento=""
 lista_nombres = []
 lista_edades = []
 lista_generos = []
 lista_enfermos=[]
 medicamentos={"Pecho":"aspirina","Cabeza":"Ibuprofeno","Músculos":"Relajante","Estómago":"Desintoxicante","Garganta":"Desinflamatorio","Asma":'Salbutamol'}
-i = 0}
+lista_medicamentos= []
+i = 0
 a=0
 b=0
 c=0
@@ -74,7 +75,7 @@ while (i<n_personas):
             for k in range(0, len(medicamentos)):
                 if(enfermedad.title() in medicamentos):
                     respuesta_medicamento=medicamentos[enfermedad.title()]
-                    
+                    lista_medicamentos.append(respuesta_medicamento)
                 else:
                     respuesta_medicamento=("Usted deberia ir al medico")
                     
@@ -103,7 +104,7 @@ while (i<n_personas):
         calorias="Usted deberia consumir 2100 kilocalorias"
     i=i+1
 
-    if etapa =="infante" or etapa==adolescente:
+    if etapa =="infante" or etapa=="adolescente":
         a=a+1
     elif etapa=="adulto":
         b=b+1
@@ -111,12 +112,12 @@ while (i<n_personas):
         c=c+1
 
 
-lista_nombres.append(nombre)
-lista_edades.append(edad)
+    lista_nombres.append(nombre)
+    lista_edades.append(edad)
 
 ##SALIDA
 
-for i in range (n_personas):
+for i in range (0,n_personas):
     print("---------------------")
     print("Persona #",i+1)
     print( "Nombre: ", lista_nombres[i] )
@@ -124,14 +125,15 @@ for i in range (n_personas):
     print("Etapa: ", etapa )
     print(calorias)
     print( "Enfermo: ", lista_enfermos[i] )
-    if (enfermo.lower() == "si"): 
+    if (lista_enfermos[i] == "si"): 
         print("Usted deberia tomar", respuesta_medicamento)
-    if (enfermo.lower() == "no"):
+    if (lista_enfermos[i] == "no"):
         print("La persona está sana")   
     print( "Género: ", lista_generos[i] )
     print("---------------------")
  
 print("Se le va a ayudar con un monto de ",a*200+b*400+c*200,"soles" )
 print("Número total de enfermos: ", n_enfermos)
+print(lista_enfermos)
+print(lista_medicamentos)
 
-    
