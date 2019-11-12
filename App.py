@@ -14,7 +14,10 @@ lista_edades = []
 lista_generos = []
 lista_enfermos=[]
 medicamentos={"Pecho":"aspirina","Cabeza":"Ibuprofeno","Músculos":"Relajante","Estómago":"Desintoxicante","Garganta":"Desinflamatorio","Asma":'Salbutamol'}
-i = 0
+i = 0}
+a=0
+b=0
+c=0
 
 while (i<n_personas):
  ##registro de persona
@@ -100,6 +103,14 @@ while (i<n_personas):
         calorias="Usted deberia consumir 2100 kilocalorias"
     i=i+1
 
+    if etapa =="infante" or etapa==adolescente:
+        a=a+1
+    elif etapa=="adulto":
+        b=b+1
+    elif etapa=="adulto mayor":
+        c=c+1
+
+
 lista_nombres.append(nombre)
 lista_edades.append(edad)
 
@@ -120,6 +131,7 @@ for i in range (n_personas):
     print( "Género: ", lista_generos[i] )
     print("---------------------")
  
+print("Se le va a ayudar con un monto de ",a*200+b*400+c*200,"soles" )
 print("Número total de enfermos: ", n_enfermos)
 
     
