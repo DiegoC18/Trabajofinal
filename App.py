@@ -1,8 +1,10 @@
 import os,sys
 os.system("cls")
 
-print("Mimp")
+print("********** Ministerio de desarrollo e inclusión social ***********")
+print(" ")
 print("---------- Bienvenido al sistema de registro de familias ----------")
+print(" ")
 
 ## INPUT
 n_personas = int(input("Ingrese el número de personas en el domicilio: "))
