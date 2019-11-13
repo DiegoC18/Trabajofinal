@@ -15,6 +15,7 @@ lista_edades = []
 lista_generos = []
 lista_enfermos=[]
 lista_etapas=[]
+lista_calorias=[]
 medicamentos={"Pecho":"aspirina","Cabeza":"Ibuprofeno","Músculos":"Relajante","Estómago":"Desintoxicante","Garganta":"Desinflamatorio","Asma":'Salbutamol'}
 lista_medicamentos= []
 i = 0
@@ -104,15 +105,20 @@ while (i<n_personas):
             
                 
     if etapa == "infante":
-        calorias="Usted deberia consumir 1400 kilocalorias"
+        calorias="Usted deberia consumir 1400 kilocalorias diariamente"
+        lista_calorias.append(calorias)
     elif etapa =="adolescente":
-        calorias="Usted deberia consumir 1600 kilocalorias"
+        calorias="Usted deberia consumir 1600 kilocalorias diariamente"
+        lista_calorias.append(calorias)
     elif etapa =="adulto" and genero=="Mujer":
-        calorias="Usted deberia consumir 2000 kilocalorias"
+        calorias="Usted deberia consumir 2000 kilocalorias diariamente"
+        lista_calorias.append(calorias)
     elif etapa =="adulto" and genero=="Hombre":
-        calorias="Usted deberia consumir 2250 kilocalorias"
+        calorias="Usted deberia consumir 2250 kilocalorias diariamente"
+        lista_calorias.append(calorias)
     elif etapa =="adulto mayor":
-        calorias="Usted deberia consumir 2100 kilocalorias"
+        calorias="Usted deberia consumir 2100 kilocalorias diariamente"
+        lista_calorias.append(calorias)
     i=i+1
 
     if etapa =="infante" or etapa=="adolescente":
@@ -134,7 +140,7 @@ for i in range (0,n_personas):
     print( "Nombre: ", lista_nombres[i] )
     print( "Edad: ", lista_edades[i] )
     print("Etapa: ", lista_etapas[i] )
-    print(calorias)
+    print(lista_calorias[i])
     print( "Enfermo: ", lista_enfermos[i] )
     if (lista_enfermos[i] == "Si"): 
         print(respuesta_medicamento)
