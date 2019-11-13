@@ -70,7 +70,7 @@ while (i<n_personas):
   ## la persona esta enferma??
         enfermo = input("¿Está la persona enferma? (Sí/No): ")
 
-        if (enfermo.lower() == "si"):
+        if (enfermo.lower() == "si" or enfermo.lower() == "sí"):
             n_enfermos += 1
             lista_enfermos.append(enfermo.title())
             enfermedad=str(input("¿Que le duele? "))
@@ -132,7 +132,7 @@ for i in range (0,n_personas):
     print(calorias)
     print( "Enfermo: ", lista_enfermos[i] )
     if (lista_enfermos[i] == "Si"): 
-        print("Usted deberia tomar", respuesta_medicamento)
+        print(respuesta_medicamento)
     if (lista_enfermos[i] == "No"):
         print("La persona está sana")   
     print( "Género: ", lista_generos[i] )
