@@ -3,7 +3,7 @@
  ![Responsabilidad Social](http://asesoria-asesores-fiscales.es/files/media/image/articles/2019/02/original/1731colaboracion+social.jpg)
 
 ## Propuesta: 
-* Programa donde las familias de bajos recursos puedan registrar a las personas que viven con ellos, el programa es capaz determinar la cantidad de alimento, dinero y si existe la necesidad de medicinas dependiendo de la edad y el género de las personas registradas.
+* Programa donde las familias de bajos recursos puedan registrar a las personas que viven con ellos, el programa es capaz de determinar la cantidad de alimento, dinero y si existe la necesidad de medicinas dependiendo de la edad y el género de las personas registradas.
 
 
 
