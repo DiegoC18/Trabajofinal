@@ -14,6 +14,7 @@ lista_nombres = []
 lista_edades = []
 lista_generos = []
 lista_enfermos=[]
+lista_etapas=[]
 medicamentos={"Pecho":"aspirina","Cabeza":"Ibuprofeno","Músculos":"Relajante","Estómago":"Desintoxicante","Garganta":"Desinflamatorio","Asma":'Salbutamol'}
 lista_medicamentos= []
 i = 0
@@ -39,15 +40,19 @@ while (i<n_personas):
     if 0<=edad<13:
         infantes=infantes+1
         etapa = "infante"
+        lista_etapas.append(etapa)
     elif 13<=edad<20:
         adolescentes=adolescentes+1
         etapa = "adolescente"
+        lista_etapas.append(etapa)
     elif 20<=edad<60:
         adultos=adultos+1
         etapa = "adulto"
+        lista_etapas.append(etapa)
     else:
         adultos_mayores=adultos_mayores+1
         etapa = "adulto mayor"
+        lista_etapas.append(etapa)
 
     while True:
         ## genero de la persona
@@ -128,7 +133,7 @@ for i in range (0,n_personas):
     print("Persona #",i+1)
     print( "Nombre: ", lista_nombres[i] )
     print( "Edad: ", lista_edades[i] )
-    print("Etapa: ", etapa )
+    print("Etapa: ", lista_etapas[i] )
     print(calorias)
     print( "Enfermo: ", lista_enfermos[i] )
     if (lista_enfermos[i] == "Si"): 
