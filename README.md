@@ -16,7 +16,7 @@
 * ¿ENFERMEDAD?
 * Datos Personales de cada integrante(nombre, apellido, edad, sexo, molestias)
 
-##salida
+### Salida
 * un resumen de cada integrante con la informacion ingresada ,una determinacion de cuantas calorias necesita, una recomendacion de medicinas dependiendo de la molestia que ingreso y el dinero que se le brindara a la familia
 
 
