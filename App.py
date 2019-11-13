@@ -138,5 +138,5 @@ for i in range (0,n_personas):
     print( "Género: ", lista_generos[i] )
     print("---------------------")
  
-print("Se le va a ayudar con un monto de ",a*200+b*400+c*200,"soles" )
+print("Se le va a ayudar con un monto de ",a*800+b*400+c*600,"soles" )
 print("Número total de enfermos: ", n_enfermos)
