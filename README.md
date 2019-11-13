@@ -7,7 +7,7 @@
 
 
 
-### pilar en que nos basamos:
+### Pilar base del proyecto:
 * Pilar de Responsabilidad Social
 
 ### Input
